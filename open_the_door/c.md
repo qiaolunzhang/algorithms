@@ -1,6 +1,9 @@
 # C语言OJ入门
 
 ### 输入输出
+
+#### scanf和printf
+
 - eg1
 
 ```
@@ -42,4 +45,27 @@ int main(int argc, char const *argv[]) {
   return 0;
 }
 
+```
+
+#### gets
+
+```
+char *gets(char *str);
+//str: this is the pointer to an array of chars where the C string is stored
+```
+
+*eg*
+```
+#include <stdio.h>
+
+int main () {
+   char str[50];
+
+   printf("Enter a string : ");
+   gets(str);
+
+   printf("You entered: %s", str);
+
+   return(0);
+}
 ```
