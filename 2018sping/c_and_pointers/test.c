@@ -1,14 +1,17 @@
 #include <stdio.h>
 
 int main() {
-	char str[50];
+	int num;
+	int i;
 
-	printf("Enter a string: \n");
-	gets(str);
-	printf("You entered: %s\n", str);
-	printf("Gets next string \n");
-	gets(str);
-	printf("You entered: %s\n", str);
+	printf("How many time do you want the loop to run? \n");
+	num = getchar();
 
+	num -= '0';
+
+	for (i = 0; i < num; i++)
+		puts("Lootping");
+
+	printf("The loop ran %d times\n", num);
 	return 0;
 }

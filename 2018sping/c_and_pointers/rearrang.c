@@ -15,6 +15,11 @@ int main(int argc, char const *argv[])
 	char input[MAX_INPUT];	// 容纳输入行的数组
 	char output[MAX_INPUT]; // 容纳输出行的数组
 	n_columns = read_column_numbers(columns, MAX_COLS);
-	
+
+	while (gets(intput) != NULL) {
+		printf("Original input is: %s\n", input);
+		rearrange(output, input, )
+	}
+
 	return 0;
 }
